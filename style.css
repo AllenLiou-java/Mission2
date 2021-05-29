@@ -1,0 +1,419 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ============================================================= */
+
+html,body{
+	width: 940px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: s'微軟正黑體';
+}
+
+
+/* =============================導覽列============================== */
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: yellow; */
+}
+
+.logo{
+	width: 220px;
+	height: 40px;
+}
+
+.nav-list{
+	display: flex;
+}
+
+.nav-list{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav-item{
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: bolder;
+}
+
+.nav-item:hover{
+	padding-left: 30px;
+	padding-right: 30px;
+	opacity: 0.7;
+}
+
+.cart{
+	margin-left: 49px;
+	padding-top: 5px;
+	line-height: 73px;
+	cursor: pointer;
+}
+
+.cart:hover{
+	opacity: 0.7;
+}
+
+.nav-item a{
+	text-decoration: none;
+	color: #3F5D45;
+}
+
+.banner{
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+/* ============================contnet內容============================= */
+
+.content{
+	display: flex;
+	/* justify-content: space-between; */
+	justify-content:flex-start;
+}
+
+.info-board{
+	text-align: center;
+}
+
+.info-board li{
+	width: 300px;
+	border: 1px solid #EAF0ED;
+	height: 65px;
+}
+
+.info-board h2{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: bolder;
+}
+
+.info-board .title h2{
+	color: #EAF0ED;
+}
+
+.info-board .item h2{	
+	color: #3F5D45;
+}
+
+.info-board .title{
+	background-color: #3F5D45;
+}
+
+.info-board .item:hover{
+	background-color: #EAF0ED;
+}
+
+/* ===============================card內容============================== */
+.item-cards{
+	width: 640px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	margin-left: 16px;
+	margin-bottom: 20px;
+}
+
+.card-title{
+	position: relative;
+	width: 300px;
+	height: 315px;
+}
+
+.card .favor{
+	position: absolute;
+	top: 19px;
+	right: 22px;
+}
+
+.featured{
+	width: 36px;
+	height: 106.73px;
+	position: absolute;
+	left: 20px;
+	top: 0;
+	background-color: #3F5D45;
+}
+
+.featured p{
+	font-size: 16px;
+	font-weight: bolder;
+	color: #EAF0ED;
+	line-height: 20px;
+	padding: 16px 10px;
+}
+
+.card-info{
+	width: 300px;
+	height: 56px;
+	display: flex;
+	background-color: #fff;
+}
+
+.prod-name{
+	width: 173px;
+	border: 1px solid #EAF0ED;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	line-height: 20px;
+	color: #3F5D45;
+}
+
+.price{
+	width: 127px;
+	border: 1px solid #EAF0ED;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bolder;
+	line-height: 24px;
+	color: #3F5D45;
+}
+
+.btnAddCart{
+	width: 300px;
+	height: 65px;
+	background-color: #EAF0ED;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: #3F5D45;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.btnAddCart:hover{
+	background-color: #3F5D45;
+	color: #EAF0ED;
+}
+
+/* ==========================page-bar內容========================== */
+
+.page-bar{
+	height: 62px;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	justify-content: flex-end;
+}
+
+.page-bar ul{
+	display: flex;
+}
+
+.page-bar li{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #EAF0ED;
+	font-size: 20px;
+	color: #3F5D45;
+}
+
+.page-no:hover{
+	color: #fff;
+	background-color: #3F5D45;
+}
+
+/* =========================訂閱欄內容========================== */
+
+.subscription{
+	height: 116px;
+	background-color: #3F5D45;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.subscription .title{
+	display: flex;
+	align-items: center;
+}
+
+.subscription .logo{
+	width: 40px;
+	height: 40px;
+}
+
+.subscription h2{
+	font-size: 24px;
+	line-height: 29px;
+	color: #EAF0ED;
+	margin-left: 20px;
+}
+
+/* =========================訂閱欄內容 - email輸入框========================= */
+
+.email-input{
+	width: 380px;
+	height: 56px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.email-input input{
+	border: none;
+	width: 252px;
+	height: 56px;
+	font-size: 20px;
+	line-height: 56px;
+	padding: 0px;
+	outline:medium;
+}
+
+.mail-logo{
+	padding: 16px 20px;
+}
+
+.send-btn{
+	width: 16px;
+	height: 16px;
+	padding: 20px 24px;
+	background-color: #FFE180;
+	cursor: pointer;
+}
+
+
+/* =====================footer內容================= */
+
+.footer{
+	height: 341px;
+	display: flex;
+	justify-content: space-around;
+	background-color: #EAF0ED;
+}
+
+.footer .left, .footer .right{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer .left{
+	width: 276px;
+}
+
+.footer .logo{
+	width: 171.22px;
+	height: 26.6px;
+	margin-top: 38.9px;
+}
+
+.footer .info{
+	margin-top: 115.5px;
+}
+
+.footer .info li{
+	font-size: 16px;
+	line-height: 24px;
+	color: #3F5D45;
+}
+
+.footer .icons{
+	margin-top: 30px;
+	display: flex;
+}
+
+.icons li{
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+}
+
+
+.footer .right{
+	width: 380px;
+	align-items: flex-end;
+}
+
+.sentence{
+	width: 59.28px;
+	height: 218.69px;
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 30px;
+}
+
+.sentence h2{
+	width: 20px;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #3F5D45;
+	padding-left: 10px;
+	
+}
+
+.sent2{
+	padding-top: 11.14px;
+}
+
+.copyright{
+	margin-top: 46.31px;
+	color: #3F5D45;
+	font-size: 16px;
+	line-height: 19px;
+}
