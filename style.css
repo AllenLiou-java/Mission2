@@ -47,6 +47,23 @@ table {
 	border-spacing: 0;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: '微軟正黑體';
+}
+
 
 /* ============================================================= */
 
@@ -63,6 +80,8 @@ html,body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	/* background-color: yellow; */
 }
 
@@ -71,46 +90,41 @@ html,body{
 	height: 40px;
 }
 
-.nav-list{
-	display: flex;
+.block{
+	display: block;
 }
 
 .nav-list{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	height: 40px;
 }
 
-.nav-item{
-	padding-left: 30px;
-	padding-right: 30px;
+.nav-item a{
 	font-weight: bolder;
+	padding: 10px 30px 8px;
+	text-decoration: none;
+	color: #3F5D45;
 }
 
-.nav-item:hover{
-	padding-left: 30px;
-	padding-right: 30px;
-	opacity: 0.7;
+.nav-item a:hover{
+	opacity: 0.5;
 }
 
 .cart{
 	margin-left: 49px;
-	padding-top: 5px;
 	line-height: 73px;
 	cursor: pointer;
 }
 
 .cart:hover{
-	opacity: 0.7;
+	opacity: 0.5;
 }
 
-.nav-item a{
-	text-decoration: none;
-	color: #3F5D45;
-}
+
 
 .banner{
-	width: 100%;
 	margin-bottom: 60px;
 }
 
@@ -126,33 +140,32 @@ html,body{
 	text-align: center;
 }
 
-.info-board li{
+.info-board .title, .info-board .item{
 	width: 300px;
-	border: 1px solid #EAF0ED;
-	height: 65px;
-}
-
-.info-board h2{
-	padding-top: 16px;
-	padding-bottom: 16px;
 	font-size: 24px;
 	line-height: 40px;
 	font-weight: bolder;
 }
 
-.info-board .title h2{
+.info-board .title{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background-color: #3F5D45;
 	color: #EAF0ED;
 }
 
-.info-board .item h2{	
+.info-board a{
+	border: 1px solid #EAF0ED;
+}
+
+.info-board a{
 	color: #3F5D45;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
-.info-board .title{
-	background-color: #3F5D45;
-}
 
-.info-board .item:hover{
+.info-board a:hover{
 	background-color: #EAF0ED;
 }
 
@@ -190,6 +203,9 @@ html,body{
 	left: 20px;
 	top: 0;
 	background-color: #3F5D45;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .featured p{
@@ -197,7 +213,7 @@ html,body{
 	font-weight: bolder;
 	color: #EAF0ED;
 	line-height: 20px;
-	padding: 16px 10px;
+	writing-mode: vertical-lr;
 }
 
 .card-info{
@@ -240,7 +256,7 @@ html,body{
 	font-size: 24px;
 	color: #3F5D45;
 	font-weight: bolder;
-	cursor: pointer;
+	
 }
 
 .btnAddCart:hover{
@@ -251,15 +267,10 @@ html,body{
 /* ==========================page-bar內容========================== */
 
 .page-bar{
-	height: 62px;
 	display: flex;
 	margin-top: 10px;
 	margin-bottom: 60px;
 	justify-content: flex-end;
-}
-
-.page-bar ul{
-	display: flex;
 }
 
 .page-bar li{
@@ -269,13 +280,33 @@ html,body{
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #EAF0ED;
+}
+
+.turnPage{
+	width: 24px;
+	height: 24px;
+	margin: 18px;
+}
+
+.page{
+	padding: 16px 24px;
 	font-size: 20px;
+	line-height: 20px;
 	color: #3F5D45;
 }
 
-.page-no:hover{
-	color: #fff;
+.btn.active{
 	background-color: #3F5D45;
+}
+
+.active .page{
+	padding: 16px 26px;
+	color: #EAF0ED;
+	opacity: 0.5;
+}
+
+.btn a:hover{
+	opacity: 0.5;
 }
 
 /* =========================訂閱欄內容========================== */
@@ -314,6 +345,7 @@ html,body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	overflow: hidden;
 }
 
 .email-input input{
@@ -331,8 +363,9 @@ html,body{
 }
 
 .send-btn{
-	width: 16px;
-	height: 16px;
+	z-index: 5;
+	/* width: 16px; */
+	/* height: 16px; */
 	padding: 20px 24px;
 	background-color: #FFE180;
 	cursor: pointer;
@@ -399,12 +432,10 @@ html,body{
 }
 
 .sentence h2{
-	width: 20px;
 	font-size: 20px;
 	font-weight: bolder;
 	color: #3F5D45;
-	padding-left: 10px;
-	
+	padding-left: 12px;
 }
 
 .sent2{
